@@ -1,19 +1,33 @@
 .home .card {
-    padding: 20px;
-    border: 1px solid #e4e4e4;
-    border-radius: 4px;
-    box-shadow: 4px 4px 6px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-  }
+  padding: 20px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  position: relative;
+}
 
-  
-  .icon {
-    position: relative;    
-    cursor: pointer;
-    filter: invert(60%);
-    padding-left: 10px;
-    padding-bottom: 5px;
-    float: right;
-    width: 3%;
-    height: 3%;
-  }
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  filter: invert(60%);
+  width: 20px;
+  height: 20px;
+}
+
+/* Edit button styling and positioning */
+.home .card .edit-button {
+  position: absolute;
+  top: 20px;
+  right: 60px; /* Positioning it to the left of the delete icon */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
